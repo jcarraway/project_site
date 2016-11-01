@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-left">
-          <span class="center-block logo">&#128640;</span>
-        </div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="title-super text-thin dark-grey">Jane Doette</h1>
-          <h3>Front-end Ninja</h3>
-        </div>
-      </div>
+        <header class="col-md-12">
+          <div class="col-md-6 text-left">
+            <span class="center-block logo">&#128640;</span>
+          </div>
+          <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title-super text-thin dark-grey">Jane Doette</h1>
+            <h3>Front-end Ninja</h3>
+          </div>
+        </header>
       <div class="row">
         <div class="col-md-12">
           <hr>
@@ -35,33 +33,33 @@
           <h2 class="grey-blue">Featured Work</h2>
         </div>
       </div>
-      <div class="row text-center center-block">
+      <section class="row text-center center-block">
         <div class="col-md-4">
           <img class="img-responsive icon" src="./images/fog-1600_large_2x.jpg" alt="fog" data-toggle="modal" data-target="#project1">
           <h3 class="text-uppercase">Fresh Tomatoes</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
+          <p><a href="https://github.com/jcarraway/fresh_tomatoes.git">Link to project</a></p>
         </div>
         <div class="col-md-4">
           <img class="img-responsive icon" src="./images/forest-1600_large_2x.jpg" alt="forest" data-toggle="modal" data-target="#project2">
           <h3 class="text-uppercase">Portfolio Site</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
+          <p><a href="https://github.com/jcarraway/project_site.git">Link to project</a></p>
         </div>
         <div class="col-md-4">
           <img class="img-responsive icon" src="./images/wave-1600_large_2x.jpg" alt="wave" data-toggle="modal" data-target="#project3">
           <h3 class="text-uppercase">Coming Soon</h3>
           <p><a href="http://github.com/">Link to project</a></p>
         </div>
-      </div>
+      </section>
     </div>
         <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Fresh Tomartoes</h4>
+                    <h4 class="modal-title" id="myModalLabel1">Fresh Tomatoes</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="images/fog-1600_large_2x.jpg">
+                    <img class="img-responsive" src="images/fog-1600_large_2x.jpg" alt="fog">
                     This was my first project in this class. I learned a lot about HTML and CSS and Python.
                 </div>
                 <div class="modal-footer">
@@ -70,14 +68,14 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project Site</h4>
+                    <h4 class="modal-title" id="myModalLabel2">Project Site</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="images/forest-1600_large_2x.jpg">
+                    <img class="img-responsive" src="images/forest-1600_large_2x.jpg" alt="forest">
                     This project is all about demonstrating great, responsive design for all elements of a website. I will collect all of my projects for this course on this Project Site for easy access in the future.
                 </div>
                 <div class="modal-footer">
@@ -86,14 +84,14 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">SS Lion Tamer</h4>
+                    <h4 class="modal-title" id="myModalLabel3">SS Lion Tamer</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="images/wave-1600_large_2x.jpg">
+                    <img class="img-responsive" src="images/wave-1600_large_2x.jpg" alt="wave">
                     This space is for the description of my third project.
                 </div>
                 <div class="modal-footer">
@@ -102,5 +100,7 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
